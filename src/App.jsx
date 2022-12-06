@@ -1,25 +1,16 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import Navbar from './components/Navbar/NavBar/NavBar';
 
-const Titulo = () => {
-  return (
-    <h2>Hola</h2>
-  )
-}
 
-const Segundotitulo = () => {
-  return (
-    <h1>HELLO</h1>
-  )
-}
 
 function App(){
-return (
-  <div>
-    <Segundotitulo/>
-    <Titulo/>
-    </div>
-)
+    return(
+      <div>
+        <NavBar/>
+      </div>
+    )
 }
 export default App
