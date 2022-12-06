@@ -15,9 +15,7 @@ const NavBar = () => {
             <Nav.Link href="#motos">Motos</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link eventKey={2} href="#memes">
-              Carrito
-            </Nav.Link>
+            <img class='Carrito' src="public/img/carrito.png" alt="Carrito"></img>
           </Nav>
         </Navbar.Collapse>
       </Container>
