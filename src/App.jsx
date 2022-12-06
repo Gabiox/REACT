@@ -9,7 +9,7 @@ import Navbar from './components/Navbar/NavBar/NavBar';
 function App(){
     return(
       <div>
-        <NavBar/>
+        <Navbar/>
       </div>
     )
 }
