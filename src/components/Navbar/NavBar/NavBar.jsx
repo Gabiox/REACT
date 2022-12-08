@@ -1,10 +1,16 @@
-import React, { useState } from 'react'; 
+import { useState } from 'react'; 
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import ItemListContainer from '../../../containers/ItemListContainer/ItemListContainer'
+import CartWidget from '../../CartWidget/CartWidget';
 import './NavBar.css'
 
 const NavBar = () => {
-  const [useState, setCount] = useState(0)
+  const [count, setCount] = useState(0)
+ 
+
+  const addCart = () => {
+    setCount(count + 1)
+}
 
     return(
     <div>
@@ -19,9 +25,9 @@ const NavBar = () => {
             <Nav.Link href="#Autos">Autos</Nav.Link>
             <Nav.Link href="#motos">Motos</Nav.Link>
           </Nav>
+          <CartWidget/> 
           <Nav>
-           <img class='Carrito' src="public/img/carrito.png" alt="Carrito"></img> 
-            </Nav>
+          </Nav>
         </Navbar.Collapse>
       </Container>
      </Navbar>
