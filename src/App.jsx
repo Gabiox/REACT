@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
+import './App.css' 
 
 import Navbar from './components/Navbar/NavBar/NavBar';
 import CartContainer from './containers/CartContainer/CartContainer';
@@ -13,14 +13,15 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App(){
     return(
-      <div>
+      <div> 
         <BrowserRouter>
         <Navbar/>
         <Routes>
           <Route path='./list' element= {<ItemListContainer />}/>
           <Route path='./cart' element= {<CartContainer />}/>
         </Routes>
-        </BrowserRouter>
+        </BrowserRouter> 
+        
       </div>
     )
 }
