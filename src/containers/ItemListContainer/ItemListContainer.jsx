@@ -15,13 +15,19 @@ const ItemListContainer = ({ saludo }) => {
             .then( resp =>  setProducts(resp.filter(product => product.categoria === categoriaId )) )   
             .catch( err => console.log( err ) )
             .finally(()=> setLoading(false))             
-        } 
+        } else {
+            gFetch() 
+            .then( resp =>  setProducts(resp) )   
+            .catch( err => console.log( err ) )
+            .finally(()=> setLoading(false))            
+        }   
+
     }, [categoriaId])
 
     console.log(categoriaId)    
   return (
     <>
-        <h2>{ saludo }</h2> 
+         <h2>{ saludo }</h2> 
        
         { loading ? 
             <h2>Cargando productos ...</h2> 
@@ -70,3 +76,4 @@ export default ItemListContainer
 
 
 
+ 

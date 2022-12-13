@@ -18,8 +18,8 @@ function App(){
         <BrowserRouter>
         <Navbar/>
          <Routes>
-          <Route path='./lista' element= {<ItemListContainer saludo={saludo}/>}/>
-          <Route path='./cart' element= {<CartContainer />}/>
+          <Route path='/lista' element= {<ItemListContainer  saludo={saludo} />}/>
+          <Route path='/cart' element= {<CartContainer />}/>
         </Routes> 
         </BrowserRouter> 
       </div>

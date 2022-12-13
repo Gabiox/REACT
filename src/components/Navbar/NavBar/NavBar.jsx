@@ -1,4 +1,5 @@
 import { useState } from 'react'; 
+import { Link } from 'react-router-dom'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 import ItemListContainer from '../../../containers/ItemListContainer/ItemListContainer'
 import CartWidget from '../../CartWidget/CartWidget';
@@ -21,8 +22,8 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#Autos">Autos</Nav.Link>
-            <Nav.Link href="#motos">Motos</Nav.Link>
+            <Link to="/autos">Autos</Link>
+            <Link to="/motos">Motos</Link> 
           </Nav>
           <CartWidget addCart = { addCart } /> 
           <Nav>
@@ -30,7 +31,6 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
      </Navbar>
-
     </div>
   
     )
