@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+ import { useState } from 'react'
+import reactLogo from './assets/react.svg' 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css' 
 
 import Navbar from './components/Navbar/NavBar/NavBar';
 import CartContainer from './containers/CartContainer/CartContainer';
 import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
+  
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
@@ -16,13 +17,12 @@ function App(){
       <div> 
         <BrowserRouter>
         <Navbar/>
-        <Routes>
-          <Route path='./list' element= {<ItemListContainer />}/>
+         <Routes>
+          <Route path='./lista' element= {<ItemListContainer saludo={saludo}/>}/>
           <Route path='./cart' element= {<CartContainer />}/>
-        </Routes>
+        </Routes> 
         </BrowserRouter> 
-        
       </div>
     )
-}
+} 
 export default App

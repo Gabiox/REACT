@@ -16,12 +16,11 @@ const NavBar = () => {
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand class='brand' href="#home"><img class='logo' src="/public/img/Carcomany.jpg" alt="Carcomany" /></Navbar.Brand>
-        <a class='Titulo' href="#home"><h2 class='Titulo'>Carcomany</h2></a>
+        <Navbar.Brand class='brand' href="#"><img class='logo' src="/public/img/Carcomany.jpg" alt="Carcomany" /></Navbar.Brand>
+        <a class='Titulo' href="#"><h2 class='Titulo'>Carcomany</h2></a>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#Camiones">Camiones</Nav.Link>
             <Nav.Link href="#Autos">Autos</Nav.Link>
             <Nav.Link href="#motos">Motos</Nav.Link>
           </Nav>
