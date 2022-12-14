@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import ItemList from '../../components/ItemList/ItemList'
 import { gFetch } from '../../DATA/gFetch'
 
 
@@ -22,51 +23,16 @@ const ItemListContainer = ({ saludo }) => {
             .finally(()=> setLoading(false))            
         }   
 
-    }, [categoriaId])
-
-    console.log(categoriaId)    
+    },  [categoriaId])
+ 
+console.log(categoriaId)    
   return (
     <>
-         <h2>{ saludo }</h2> 
-       
         { loading ? 
-            <h2>Cargando productos ...</h2> 
+            <h2>Cargando productos</h2> 
                 :
-                <div 
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        flexWrap: 'wrap'
-                    }}
-                >
-                    {
-                        products.map( product =>    <div            
-                            style={{ marginLeft: 100}}
-                            className='col-md-3'
-                            key={product.id}
-                        >   
-                             <Link to={`/detail/${product.id}`} > 
-                                
-                                <div className="card w-100 mt-5" >
-                                    <div className="card-header">
-                                        {`${product.name} - ${product.categoria}`}
-                                    </div>
-                                    <div className="card-body">
-                                        <img src={product.foto} alt='' className='w-50' />
-                                        {product.precio}                                                            
-                                    </div>
-                        
-                                </div>
-
-                             </Link> 
-                                            
-                            
-                    </div>  
-) 
-                    }
-                </div>
-            }
-
+      <ItemList products={products}/>
+        }
         
     </>
   )

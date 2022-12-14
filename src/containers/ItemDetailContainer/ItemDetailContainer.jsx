@@ -1,9 +1,15 @@
-import React from 'react'
+import { useParams } from "react-router-dom"
+import ItemDetail from "../../components/ItemDetail/ItemDetail"
 
 const ItemDetailContainer = () => {
-  return (
-    <div>ItemDetailContainer</div>
-  )
+    
+    const { productoId } = useParams()
+    console.log(productoId)
+
+    return (
+        <ItemDetail
+        />
+    )
 }
 
 export default ItemDetailContainer

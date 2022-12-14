@@ -1,11 +1,10 @@
 import { useState } from 'react'; 
 import { Link } from 'react-router-dom'
 import { Container, Navbar, Nav } from 'react-bootstrap'
-import ItemListContainer from '../../../containers/ItemListContainer/ItemListContainer'
 import CartWidget from '../../CartWidget/CartWidget';
 import './NavBar.css'
 
-const NavBar = () => {
+const NavBar = (  ) => {
   const [count, setCount] = useState(0)
  
 
@@ -22,8 +21,19 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link to="/autos">Autos</Link>
-            <Link to="/motos">Motos</Link> 
+           <Nav.Link className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} 
+            to="/categoria/Autos"
+            >
+              Autos
+           </Nav.Link>
+           <Nav.Link className={ ( {isActive} )=> isActive ? 'btn btn-success' : 'btn btn-outline-success'} 
+            to="/categoria/Motos"
+            >
+              Motos
+           </Nav.Link>
+
+            {/* <Link to="/autos">Autos </Link>
+            <Link to="/motos">Motos </Link>   */}
           </Nav>
           <CartWidget addCart = { addCart } /> 
           <Nav>

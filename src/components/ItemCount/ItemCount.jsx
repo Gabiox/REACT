@@ -2,7 +2,9 @@ import React from 'react'
 
 const ItemCount = () => {
   return (
-    <div>ItemCount</div>
+    <div>ItemCount
+      <h2>hola</h2>
+    </div>
   )
 }
 

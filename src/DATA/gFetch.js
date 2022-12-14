@@ -1,12 +1,12 @@
 
 
 let Productos = [
-{id:1, name:'Producto1', categoria:'Autos', stock:'10', precio:'9000$', foto:'/public/img/Hyundai_Accent(AUTO).jpg'},
-{id:2, name:'Producto2', categoria:'Autos', stock:'10', precio:'8000$', foto:'/public/img/Volkswagen_Polo(AUTO).png'},
-{id:3, name:'Producto3', categoria:'Autos', stock:'10', precio:'8000$', foto:'/public/img/Volkswagen_Golf(AUTO).jpg'},
-{id:4, name:'Producto4', categoria:'Motos', stock:'10', precio:'7000$', foto:'/public/img/Kawasaki_Ninja(MOTO).jpg'},
-{id:5, name:'Producto5', categoria:'Motos', stock:'10', precio:'5000$', foto:'/public/img/Yamaha_Ybr 125(MOTO).jpg'},
-{id:6, name:'Producto6', categoria:'Motos', stock:'10', precio:'5000$', foto:'/public/img/Yumbo-GS(MOTO).jpeg'}
+{id:1, name:'Producto 1', categoria:'Autos', stock:'10', precio:'9000$', foto:'/public/img/Hyundai_Accent(AUTO).jpg'},
+{id:2, name:'Producto 2', categoria:'Autos', stock:'10', precio:'8000$', foto:'/public/img/Volkswagen_Polo(AUTO).png'},
+{id:3, name:'Producto 3', categoria:'Autos', stock:'10', precio:'8000$', foto:'/public/img/Volkswagen_Golf(AUTO).jpg'},
+{id:4, name:'Producto 4', categoria:'Motos', stock:'10', precio:'7000$', foto:'/public/img/Kawasaki_Ninja(MOTO).jpg'},
+{id:5, name:'Producto 5', categoria:'Motos', stock:'10', precio:'5000$', foto:'/public/img/Yamaha_Ybr 125(MOTO).jpg'},
+{id:6, name:'Producto 6', categoria:'Motos', stock:'10', precio:'5000$', foto:'/public/img/Yumbo-GS(MOTO).jpeg'}
 
 ]
 
