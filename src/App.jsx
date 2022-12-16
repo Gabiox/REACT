@@ -15,18 +15,17 @@ import { CartContext } from './context/cartContext';
 
 
 function App(){
+  
     return(
         <CartContext.Provider value={[]}>
-          
       <div> 
         <BrowserRouter>
         <Navbar/>
          <Routes>
-          <Route path='/' element= {<ItemListContainer saludo={'saludo'}/>}/> 
+          <Route path='/' element= {<ItemListContainer />}/> 
+          <Route path='/categoria/:categoriaId' element= {<ItemListContainer />}/>
           <Route path='/detail/:productoId' element= {<ItemDetailContainer/>}/>
-          <Route path='/categoria/:categoriaId' element= {<ItemListContainer saludo={'saludo'} />}/>
-          <Route path='/cart' element= {<CartContainer />}/>
-          <Route path='*'element={<Navigate to=''/>}/>
+          <Route path='/cart' element= {<CartContainer />}/> 
         </Routes> 
         </BrowserRouter> 
       </div>
