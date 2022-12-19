@@ -5,7 +5,8 @@ import { gFetch } from "../../DATA/gFetch";
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState();
-    const {productoId} = useParams ()
+    const {productoId} = useParams ();
+    const [loading,setLoading] = useState(true)
     /* console.log(productoId); */
     
 
@@ -13,11 +14,16 @@ const ItemDetailContainer = () => {
         gFetch(productoId)
         .then(resp => setProduct(resp))
         .catch(error=> console.log(error))
+        .finally(()=> setLoading(false))
     }, [])
 
     return (
-        <ItemDetail product={product}
-        />
+        <>
+        {
+            loading ? 'cargando...' :
+            <ItemDetail product={product}/>
+        }
+        </>
     )
 }
 

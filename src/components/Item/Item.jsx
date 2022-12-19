@@ -9,7 +9,7 @@ const Item = ({product}) => {
 
       <Link to={`/detail/${product.id}`}> 
 
-        <div className="card w-100 mt-4">
+         <div className="card w-100 mt-4">
            <div className="card-header">
               {`${product.name} - ${product.categoria}`}
           </div>
